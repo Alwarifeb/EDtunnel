@@ -2,7 +2,7 @@
 import { connect } from "cloudflare:sockets";
 var userID = "bcbee59c-1d52-4b8f-84b1-e4db7129f6d3";
 var proxyIP = ['138.2.104.102', '165.22.96.67', '38.180.29.86'];
-var hostnames = "suryalawari.my.id";
+var hostnames = "suryafebri.xyz";
 
 if (!isValidUUID(userID)) {
   throw new Error("uuid is not valid");
