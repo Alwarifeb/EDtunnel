@@ -710,6 +710,7 @@ function getวเลสConfig(userIDs, hostName) {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
 		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
+		<h2>UUID: ${isp}</h2>${hashSeparator}\nv2ray default ip
 ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 ${วเลสMain}
 <button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
@@ -855,63 +856,6 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 	});
 
 	return ผลลัพธ์.join('\n');
-	
-	`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VLESS CLOUDFLARE</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        pre {
-          white-space: pre-wrap;
-          word-wrap: break-word;
-    </style>
-</head>
-<body>
-============================================
-<br><h2>VLESS ACCOUNT INFORMATION</h2>
-============================================<pre><b>
-» Domain      : ${hostName}
-» ISP         : ${isp}
-» Country     : ${country}
-» City        : ${city}
-» User ID     : ${userID}
-» Port TLS    : 443
-» Port NTLS   : 80
-» Security    : auto
-» Network     : (WS)
-» Path        : /vless-ws
-
-==================================================
-<pre>
-<b>FORMAT TLS 443 : <button class="button2" onclick='copyToClipboard("${vlessTlsFormatted}")'><i class="fa fa-clipboard"></i> Copy TLS 443</button> 
-
-${vlessTls}
-==================================================
-
-<b>FORMAT NTLS 80  : <button class="button2" onclick='copyToClipboard("${vlessNtlsFormatted}")'><i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
-
-${vlessNtls}
-==================================================
-    </div>
-</body>
-<script>
-    function copyToClipboard(text) {
-        navigator.clipboard.writeText(text)
-            .then(() => {
-                alert("Copied to clipboard");
-            })
-            .catch((err) => {
-                console.error("Failed to copy to clipboard:", err);
-            });
-    }
-</script>
-</html>`;
-
 }
 
 const cn_hostnames = [
