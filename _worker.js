@@ -710,7 +710,7 @@ function getวเลสConfig(userIDs, hostName) {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
 		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
-		<h2>UUID: ${isp}</h2>${hashSeparator}\nv2ray default ip
+	
 ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 ${วเลสMain}
 <button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
