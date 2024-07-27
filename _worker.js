@@ -709,7 +709,7 @@ function getวเลสConfig(userIDs, hostName) {
 	const output = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
-		return `<h2>UUID: ${userID}</h2>${country}\nv2ray default ip
+		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
 	
 ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 ${วเลสMain}
