@@ -7,7 +7,7 @@ compatibility_date = "2023-05-26"
 
 
 [[routes]]
-pattern = "sg.suryafebri.xyz"
+pattern = "suryafebri.xyz"
 custom_domain = true
 [[routes]]
 pattern = "cf.shopee.co.id.sg.suryafebri.xyz"
